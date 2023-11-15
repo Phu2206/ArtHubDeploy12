@@ -64,7 +64,7 @@ public class AccountController {
     @GetMapping("/testConnection")
     public ResponseEntity<ResponeObject> testConnection()
     {
-        return new ResponseEntity<>(new ResponeObject("Ok","Connect to server successfully!",null),HttpStatus.OK);
+        return new ResponseEntity<>(new ResponeObject("Ok","Connect to Azure successfully!",null),HttpStatus.OK);
     }
     @GetMapping("/accounts")
     public ResponseEntity<List<ResponeAccountDTO>> getAllAccounts2(@RequestParam(required = false) String name) {
