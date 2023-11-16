@@ -181,6 +181,7 @@ public class AccountController {
         accountResponseDTO.setFacebook(account.getFacebook());
         accountResponseDTO.setPassword(account.getPassword());
         accountResponseDTO.setToken(account.getToken());
+        accountResponseDTO.setIsPremium(account.getIsPremium());
         return accountResponseDTO;
     }
 
